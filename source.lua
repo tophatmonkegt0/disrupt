@@ -29,19 +29,19 @@ local executor_used = tostring(identifyexecutor())
 if executor_used == "Synapse Z" then
     -- vars
     local visuals_enabled = false
-    local show_boxes_enabled = false
+    local show_boxes_enabled = true
     local show_tracers_enabled = false
     local show_names_enabled = false
-    local show_skeleton_enabled = false
+    local show_skeleton_enabled = true
     local show_view_line_enabled = false
-    local aimbot_enabled = false
+    local aimbot_enabled = true
     local aimbot_fov_size = 50
     local aimbot_aim_part = "Head"
     local aimbot_keybind = Enum.UserInputType.MouseButton2
     local aimbot_smoothness = 0
     local show_fov = false
     local aimbot_right_click = false
-    local aimbot_smoothness_enabled = false
+    local aimbot_smoothness_enabled = true
     local aimbot_prediction_enabled = false
     local aimbot_prediction_strength_x = 0
     local aimbot_prediction_strength_y = 0
@@ -54,8 +54,8 @@ if executor_used == "Synapse Z" then
     local tp_behind_offset = 0
     local tp_behind_height = 6
     local teleporting = false
-    local speed_multiplier = 0
-    local speed_modifier_enabled = false
+    local speed_multiplier = 1
+    local speed_modifier_enabled = true
 
     function init_visuals(player)
         if not visuals_enabled then
